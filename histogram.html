@@ -1,0 +1,83 @@
+<!-- histogram.html - Submitted by Timothy Chua; 301283980; -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+    		<link rel="stylesheet" href = "histogram.css">
+		<title>Histogram Generator</title>
+	</head>
+
+	<body>
+	<!-- Histogram visual overlay -->
+	<div class="gridGapHider"></div>
+
+	<!-- Page display header -->
+	<h1>Histogram Generator</h1>
+
+	<!-- CSS Grid Container -->
+	<div class="container">
+		<!-- Lefthand lower bound forms box -->
+  		<div class="lowerBoundBoxes">
+			<h2>Lower bounds</h2>
+			<form>
+				<label>Max </label>
+  				<input type=number id="letter" name="letter" value=100.00 onkeyup="changeMax(value)">
+				<br>
+  				<label><br>A+ </label>
+  				<input type=number id="letter" name="letter" value=95.00 onkeyup="changeBound(value,0)">
+				<br>
+  				<label><br>A  </label>
+  				<input type=number id="letter" name="letter" value=90.00 onkeyup="changeBound(value,1)">
+				<br>			
+  				<label><br>A- </label>
+  				<input type=number id="letter" name="letter" value=85.00 onkeyup="changeBound(value,2)">
+				<br>
+  				<label><br>B+ </label>
+  				<input type=number id="letter" name="letter" value=80.00 onkeyup="changeBound(value,3)">
+				<br>
+  				<label><br>B  </label>
+  				<input type=number id="letter" name="letter" value=75.00 onkeyup="changeBound(value,4)">
+				<br>
+  				<label><br>B- </label>
+  				<input type=number id="letter" name="letter" value=70.00 onkeyup="changeBound(value,5)">
+				<br>
+  				<label><br>C+ </label>
+  				<input type=number id="letter" name="letter" value=65.00 onkeyup="changeBound(value,6)">
+				<br>
+  				<label><br>C  </label>
+  				<input type=number id="letter" name="letter" value=60.00 onkeyup="changeBound(value,7)">
+				<br>
+  				<label><br>C- </label>
+  				<input type=number id="letter" name="letter" value=55.00 onkeyup="changeBound(value,8)">
+				<br>
+  				<label><br>D  </label>
+  				<input type=number id="letter" name="letter" value=50.00 onkeyup="changeBound(value,9)">
+				<br>
+  				<label><br>F  </label>
+  				<input type=number id="letter" name="letter" value=0.00  onkeyup="changeBound(value,10)">
+				<br><br>
+		</div>
+		<!-- Upper right-hand histogram letter grade labels -->
+		<div class = "histogramLetters">
+			<h2>Histogram</h2>
+			<p>A+<br>A<br>A-<br>B+<br>B<br>B-<br>C+<br>C<br>C-<br>D<br>F</p>
+		</div>
+
+		<!-- Upper right-hand histogram data display -->
+  		<div class="histogramDisplay">
+			<h2><br></h2>
+			<p class= "histographBars" id="histogramText"></p>
+			<script src="calculate.js"></script>
+		</div>
+
+		<!-- Lower right-hand new grade intake form -->
+  		<div class="newGradeForm">
+			<form>
+			<label class= "newGradeLabel"><br>New Grade: </label>
+				<input type="number" id="grade">
+  				<button type ="button" onclick="addGrade()">Submit</button>
+				<p id="notifyInput"></p>
+			</form>
+		</div>
+	</body>
+</html>
