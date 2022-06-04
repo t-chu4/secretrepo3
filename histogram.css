@@ -1,0 +1,122 @@
+/* histogram.css - Submitted by Timothy Chua; 301283980; */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  
+}
+
+/* Create and colour CSS grid components. */
+.lowerBoundBoxes {
+	grid-area:lowerBoundBoxes;
+	background-color:rgb(233, 239, 241)
+}
+
+.histogramDisplay {
+	grid-area: histogramDisplay;
+	background-color:rgb(233, 239, 241)
+}
+
+.histogramLetters {
+	grid-area:histogramLetters;
+	background-color:rgb(233, 239, 241)
+}
+
+.newGradeForm {
+	grid-area: newGradeForm;
+	background-color:rgb(233, 239, 241)
+}
+
+/* All font settings. */
+h1 {
+  margin-left: 0px;
+  font-family: "Arial";
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Cambria";
+  font-weight: bold;
+  line-height: 0.2;
+  color:rgb(166,25,46);
+  margin-left: 15px;
+}
+
+input[type=number] {
+	width: 19%;
+	font-family: "Constantia";
+	font-weight: bold;
+	font-size: large;
+	margin: 0px 0px;
+	padding: 5px 0px;
+	text-align: right;
+}
+
+.newGradeForm{
+	width: 100%;
+	font-family: "Constantia";
+	font-weight: bold;
+	font-size: large;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	text-align: left;
+}
+
+label{
+	font-family: "Times New Roman";
+	font-weight: bold;
+        display: inline-block;
+        padding: 0px 40px;
+        text-align: left;
+        width: 100px;
+        vertical-align: center;
+}
+
+.newGradeLabel{
+	font-family: "Times New Roman";
+	font-weight: bold;
+        display: inline-block;
+        padding: 0px 15px;
+        text-align: left;
+        width: 100px;
+        vertical-align: left;
+}
+
+p{
+font-family: "Times New Roman";
+	font-weight: bold;
+	margin: 0px 30px;
+	line-height: 1.65;
+}
+
+.histographBars{
+	font-family: "Helvetica";
+	font-weight: bold;
+	color:rgb(166,25,46);
+}
+
+/* Settings for histogram visual overlay. */
+.gridGapHider {
+    width: 18px;
+    height: 383px;	/* Note: Should work fine on maximized windows. */
+    position: absolute;
+    top: 8.65%; 
+    left: 30.5%;
+    background-color:rgb(233, 239, 241);
+    z-index: 1;
+}
+
+/*  Settings for CSS grid layout. Excess rows/columns used to achieve ratios in assignment visuals */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-gap: 15px;
+  
+  grid-template-areas:
+    "lowerBoundBoxes lowerBoundBoxes lowerBoundBoxes histogramLetters histogramDisplay histogramDisplay"
+    "lowerBoundBoxes lowerBoundBoxes lowerBoundBoxes histogramLetters histogramDisplay histogramDisplay" 
+    "lowerBoundBoxes lowerBoundBoxes lowerBoundBoxes newGradeForm newGradeForm newGradeForm";
+}
