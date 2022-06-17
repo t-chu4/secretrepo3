@@ -1,0 +1,79 @@
+body {
+  background-color: lightgrey;
+  font-family: "Trebuchet MS";
+}
+
+.headerContainer{
+  background-color: rgb(166,25,46);
+  font-family: "Trebuchet MS";
+  color: white;
+  padding-left: 10px;
+  line-height: 50px;
+}
+h3{
+  font-family: "Trebuchet MS";
+  color: rgb(166,25,46);
+  line-height: 0px;
+  margin-bottom: 0px;
+}
+.gridContainer{
+  display:grid;
+  grid-template-columns: repeat(5,120px);
+  grid-template-rows: repeat(4,110px);
+  grid-gap: 20px;
+  margin-top: 0px;
+}
+
+.box{
+  align-self: end;
+  font-size: x-small;
+  text-align: center;
+  width:60px;
+  height:60px;
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 120px;
+  max-height: 120px;
+  border-width: 1px;
+}
+
+.interfaceContainer{
+  display:grid;
+  grid-template-columns: repeat(2,400px);
+  border-top-style: solid;
+  border-color: rgb(166,25,46);
+  padding-left: 5px;
+}
+
+.addContainer{
+  background-color: lightgrey;
+}
+
+.modifyContainer{
+  background-color: lightgrey;
+}
+
+button{
+  background-color: rgb(166,25,46);
+  padding: 15px;
+  margin-left: 21px;
+  margin-right:18px;
+  color: white;
+  border:none;
+  float:right;
+  cursor:pointer;
+}
+
+label {
+  display: inline-block;
+  width: 50%;
+  align-self: right;
+}
+
+input{
+  width: 42%;
+}
+
+select{
+  width: 44%;
+}
